@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>সাব্বির | গ্রাফিক ডিজাইনার</title>
+<meta name="description" content="সাব্বির — গ্রাফিক ডিজাইনার। লোগো, ব্র্যান্ডিং, পোস্টার ও সোশ্যাল মিডিয়া ডিজাইন।">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@500;700;800&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--ink:#14231c;--mut:#5b6a62;--g:#0d4a36;--r:#e4402f;--y:#f2b705;--card:#ffffff;--line:#d9d6cc;
+ --h:"Anek Bangla","Hind Siliguri",system-ui,sans-serif;--b:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1713;--ink:#eef2ee;--mut:#9fb0a6;--card:#17231d;--line:#2a3a31}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--b);font-size:17px;line-height:1.7}
+a{color:inherit}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .w{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{font-family:var(--h);font-weight:800;font-size:20px;text-decoration:none}
+nav{display:flex;gap:16px;font-size:15px}
+nav a{text-decoration:none;color:var(--mut)}
+nav a:hover,nav a:focus-visible{color:var(--r)}
+h1,h2,h3{font-family:var(--h);line-height:1.15;margin:0}
+.hero{padding:56px 0 48px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(64px,22vw,168px);font-weight:800;letter-spacing:-.02em;color:var(--g)}
+.hero .role{font-family:var(--h);font-size:clamp(22px,5vw,34px);font-weight:700;margin-top:6px}
+.hero p{max-width:520px;color:var(--mut);margin:14px 0 24px}
+.dot{position:absolute;right:-50px;top:30px;width:min(46vw,260px);aspect-ratio:1;border-radius:50%;background:var(--r);opacity:.95;z-index:-1}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;border:2px solid var(--g)}
+.btn.p{background:var(--g);color:#fff}
+.btn:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(30px,6vw,44px);font-weight:800;margin-bottom:22px}
+.about{display:grid;gap:28px}
+.about p{margin:0 0 12px;max-width:620px}
+.facts{display:grid;gap:10px;align-content:start}
+.facts div{padding:14px 18px;background:var(--card);border-left:6px solid var(--y);border-radius:4px}
+.facts b{font-family:var(--h);display:block;font-size:18px}
+.facts span{color:var(--mut);font-size:15px}
+.sv{display:grid;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card)}
+.sv div{padding:20px 22px;border-bottom:1px solid var(--line)}
+.sv div:last-child{border-bottom:0}
+.sv h3{font-size:21px;margin-bottom:4px}
+.sv p{margin:0;color:var(--mut);font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.work{background:var(--card);border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.art{aspect-ratio:1;position:relative;overflow:hidden}
+.art svg{width:100%;height:100%;display:block;transition:transform .35s}
+.work:hover .art svg{transform:scale(1.05)}
+.work div.c{padding:10px 12px}
+.work h3{font-size:16px}
+.work span{font-size:13px;color:var(--mut)}
+.note{color:var(--mut);font-size:14px;margin-top:14px}
+.ct{display:grid;gap:14px}
+.ct .big{font-family:var(--h);font-weight:800;font-size:clamp(34px,9vw,60px);color:var(--r);text-decoration:none;line-height:1.1}
+footer{padding:26px 0 40px;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+@media (min-width:720px){
+ .about{grid-template-columns:1.4fr 1fr}
+ .sv{grid-template-columns:repeat(2,1fr)}
+ .sv div{border-right:1px solid var(--line)}
+ .sv div:nth-child(2n){border-right:0}
+ .grid{grid-template-columns:repeat(3,1fr);gap:18px}
+ .work h3{font-size:18px}
+}
+@media (max-width:420px){nav{gap:11px;font-size:14px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="w">
+  <a class="logo" href="#top">সাব্বির</a>
+  <nav aria-label="প্রধান মেনু">
+   <a href="#about">পরিচিতি</a><a href="#services">সেবা</a><a href="#work">কাজ</a><a href="#contact">যোগাযোগ</a>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero"><div class="dot" aria-hidden="true"></div>
+ <div class="w">
+  <h1>সাব্বির</h1>
+  <div class="role">গ্রাফিক ডিজাইনার</div>
+  <p>আপনার ব্র্যান্ডের জন্য পরিষ্কার, মনে রাখার মতো ডিজাইন। লোগো থেকে পোস্টার, সবকিছু এক হাতে।</p>
+  <div class="btns">
+   <a class="btn p" href="#work">কাজ দেখুন</a>
+   <a class="btn" href="#contact">কথা বলুন</a>
+  </div>
+ </div>
+</div>
+
+<section id="about"><div class="w">
+ <h2>পরিচিতি</h2>
+ <div class="about">
+  <div>
+   <p>আমি সাব্বির, একজন গ্রাফিক ডিজাইনার। ছোট ব্যবসা, দোকান, প্রতিষ্ঠান ও ব্যক্তিগত ব্র্যান্ডের জন্য ডিজাইন করি।</p>
+   <p>আমার কাজের লক্ষ্য সহজ: ডিজাইন দেখে যেন মানুষ বুঝতে পারে আপনি কী করেন, আর মনে রাখে। শুরুর আইডিয়া থেকে চূড়ান্ত ফাইল পর্যন্ত আপনার সঙ্গে থেকে কাজ করি।</p>
+  </div>
+  <div class="facts">
+   <div><b>পরিষ্কার যোগাযোগ</b><span>কাজ শুরুর আগেই বিষয়, সময় ও খরচ নিয়ে আলোচনা</span></div>
+   <div><b>নিজস্ব ধাঁচ</b><span>টেমপ্লেট নয়, আপনার ব্র্যান্ডের জন্য আলাদা ডিজাইন</span></div>
+   <div><b>সব ফরম্যাটে ফাইল</b><span>প্রিন্ট ও অনলাইন, দুই ব্যবহারের জন্যই প্রস্তুত</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="services"><div class="w">
+ <h2>আমার সেবাসমূহ</h2>
+ <div class="sv">
+  <div><h3>লোগো ও ব্র্যান্ড আইডেন্টিটি</h3><p>লোগো, রঙ ও ফন্টের নিয়ম নিয়ে পূর্ণ ব্র্যান্ড সেট।</p></div>
+  <div><h3>সোশ্যাল মিডিয়া ডিজাইন</h3><p>ফেসবুক ও ইনস্টাগ্রামের পোস্ট, কভার ও বিজ্ঞাপন।</p></div>
+  <div><h3>পোস্টার ও ব্যানার</h3><p>অনুষ্ঠান, অফার ও প্রচারের জন্য প্রিন্টযোগ্য ডিজাইন।</p></div>
+  <div><h3>প্যাকেজিং ও লেবেল</h3><p>পণ্যের মোড়ক ও স্টিকারের ডিজাইন।</p></div>
+  <div><h3>ব্রোশিউর ও ভিজিটিং কার্ড</h3><p>প্রতিষ্ঠানের পরিচয় তুলে ধরার ছাপানো উপকরণ।</p></div>
+  <div><h3>বইয়ের প্রচ্ছদ</h3><p>লেখার মেজাজ ধরে প্রচ্ছদ ও ভেতরের সাজসজ্জা।</p></div>
+ </div>
+</div></section>
+
+<section id="work"><div class="w">
+ <h2>কাজের নমুনা</h2>
+ <div class="grid">
+
+  <article class="work"><div class="art"><svg viewBox="0 0 200 200" role="img" aria-label="লোগো নমুনা"><rect width="200" height="200" fill="#0d4a36"/><circle cx="100" cy="92" r="46" fill="#f2b705"/><path d="M70 120 Q100 40 130 120 Z" fill="#e4402f"/><rect x="60" y="158" width="80" height="6" rx="3" fill="#f7f5f0"/></svg></div><div class="c"><h3>সবুজ নীড়</h3><span>লোগো ডিজাইন</span></div></article>
+
+  <article class="work"><div class="art"><svg viewBox="0 0 200 200" role="img" aria-label="পোস্টার নমুনা"><rect width="200" height="200" fill="#e4402f"/><circle cx="130" cy="70" r="52" fill="#f7f5f0"/><rect x="24" y="130" width="120" height="14" fill="#14231c"/><rect x="24" y="152" width="80" height="8" fill="#14231c"/><rect x="24" y="168" width="50" height="8" fill="#f2b705"/></svg></div><div class="c"><h3>বইমেলা ২০২৬</h3><span>পোস্টার</span></div></article>
+
+  <article class="work"><div class="art"><svg viewBox="0 0 200 200" role="img" aria-label="সোশ্যাল মিডিয়া পোস্ট নমুনা"><rect width="200" height="200" fill="#f2b705"/><rect x="28" y="28" width="144" height="144" rx="14" fill="#14231c"/><circle cx="100" cy="86" r="30" fill="#f2b705"/><rect x="58" y="128" width="84" height="10" rx="5" fill="#f7f5f0"/><rect x="74" y="146" width="52" height="8" rx="4" fill="#e4402f"/></svg></div><div class="c"><h3>ঈদ অফার</h3><span>সোশ্যাল মিডিয়া পোস্ট</span></div></article>
+
+  <article class="work"><div class="art"><svg viewBox="0 0 200 200" role="img" aria-label="প্যাকেজিং নমুনা"><rect width="200" height="200" fill="#e8dfc9"/><path d="M60 50 L140 50 L150 170 L50 170 Z" fill="#0d4a36"/><rect x="62" y="78" width="76" height="52" fill="#f7f5f0"/><circle cx="100" cy="104" r="16" fill="#e4402f"/><rect x="70" y="30" width="60" height="22" rx="4" fill="#f2b705"/></svg></div><div class="c"><h3>গ্রামের মধু</h3><span>প্যাকেজিং</span></div></article>
+
+  <article class="work"><div class="art"><svg viewBox="0 0 200 200" role="img" aria-label="ব্রোশিউর নমুনা"><rect width="200" height="200" fill="#14231c"/><rect x="26" y="34" width="68" height="132" fill="#f7f5f0"/><rect x="100" y="34" width="68" height="132" fill="#e4402f"/><rect x="36" y="50" width="48" height="8" fill="#14231c"/><rect x="36" y="66" width="36" height="5" fill="#5b6a62"/><rect x="36" y="78" width="44" height="5" fill="#5b6a62"/><circle cx="134" cy="84" r="20" fill="#f2b705"/></svg></div><div class="c"><h3>স্কুলের পরিচিতি</h3><span>ব্রোশিউর</span></div></article>
+
+  <article class="work"><div class="art"><svg viewBox="0 0 200 200" role="img" aria-label="বইয়ের প্রচ্ছদ নমুনা"><rect width="200" height="200" fill="#d9d6cc"/><rect x="50" y="22" width="100" height="156" fill="#0d4a36"/><rect x="50" y="22" width="12" height="156" fill="#082f22"/><circle cx="108" cy="82" r="26" fill="#f2b705"/><path d="M70 150 Q108 100 142 150 Z" fill="#e4402f"/><rect x="76" y="40" width="56" height="7" fill="#f7f5f0"/></svg></div><div class="c"><h3>নদীর ওপারে</h3><span>বইয়ের প্রচ্ছদ</span></div></article>
+
+ </div>
+ <p class="note">এগুলো নমুনা-ছবি। নিজের আসল কাজের ছবি দিয়ে বদলাতে প্রতিটি &lt;svg&gt; অংশ &lt;img src="আপনার-ছবি.jpg" alt="…"&gt; দিয়ে বদলে দিন।</p>
+</div></section>
+
+<section id="contact"><div class="w">
+ <h2>যোগাযোগ</h2>
+ <div class="ct">
+  <p style="margin:0;max-width:520px">নতুন কাজ বা প্রশ্ন থাকলে সরাসরি ফোন বা হোয়াটসঅ্যাপে জানান।</p>
+  <a class="big" href="tel:+8801626535756">০১৬২৬-৫৩৫৭৫৬</a>
+  <div class="btns">
+   <a class="btn p" href="tel:+8801626535756">ফোন করুন</a>
+   <a class="btn" href="https://wa.me/8801626535756" target="_blank" rel="noopener">হোয়াটসঅ্যাপে লিখুন</a>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="w">© ২০২৬ সাব্বির। সর্বস্বত্ব সংরক্ষিত।</div></footer>
+</body>
+</html>
